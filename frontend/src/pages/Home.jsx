@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <>
       <Hero />
-       <Hero />
       <Carousel />
       <AnimatedCards />
       <CallToAction />
