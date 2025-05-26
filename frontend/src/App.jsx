@@ -1,18 +1,37 @@
-import './App.css'
-import Navbar from './components/navbar'
-import Footer from './components/footer'
-import Table from './components/Table'
+import { Route, Routes } from 'react-router-dom'
+import {ToastContainer,toast} from 'react-toastify'
+import Home from './pages/Home.jsx';
+import Problems from './pages/Problems.jsx';
+import Login from './pages/Login.jsx';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
+import Myprofile from './pages/Myprofile.jsx';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
+import LeaderBoard from './pages/LeaderBoard.jsx';
+import ProblemPage from './pages/ProblemPage.jsx';
+
+
 function App() {
-
-
   return (
-    
-    <fragment>
-      <Navbar />
-      <Footer />
-      <Table />
-    </fragment>
+    <div>
+      <ToastContainer/>
+      <Navbar/>         
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/problems' element={<Problems/>} />
+        <Route path='/leaderboard' element={<LeaderBoard/>}/>
+        <Route path='/problems/:id' element={<ProblemPage/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/about' element={<About/>} /> 
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/my-profile' element={<Myprofile/>} />
+      </Routes>
+
+      <Footer/>
+
+    </div>
   )
 }
 
-export default App
+export default App;
