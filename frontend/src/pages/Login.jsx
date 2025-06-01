@@ -27,6 +27,7 @@ const Login = () => {
           localStorage.setItem('token', data.token);
           navigate('/');
         } else {
+          // eslint-disable-next-line no-undef
           toast.error(response.message);
         }
       } catch (error) {

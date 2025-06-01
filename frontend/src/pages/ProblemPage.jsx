@@ -51,6 +51,7 @@ const ProblemPage = () => {
       setOutput(res.data.output);
       setExecutionTime(res.data.executionTime);
       toast.success(res.data.message || 'Submitted successfully!');
+    // eslint-disable-next-line no-unused-vars
     } catch (error) {
       toast.error('Submission failed');
     }
@@ -68,6 +69,7 @@ const ProblemPage = () => {
         setVerdict(res.data.verdict);
         setExecutionTime(res.data.executionTime);
         toast.success('Code executed successfully');
+    // eslint-disable-next-line no-unused-vars
     } catch (error) {
         toast.error('Run failed');
     }
