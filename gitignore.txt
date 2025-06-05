@@ -1,0 +1,89 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Build output
+dist/
+build/
+
+# Uploaded files (if using multer or similar)
+uploads/
+public/uploads/
+
+# Coverage reports
+coverage/
+
+# Debug output
+debug.log
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Parcel-bundler cache
+.cache/
+
+# Next.js build output
+.next/
+
+# SvelteKit or Vite
+.svelte-kit/
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+
+# MongoDB dump files
+dump/
+
+# Backup files
+*.bak
+*.old
+*.orig
+*.swp
+
+# Custom secrets
+config/secrets.js
+
+# Mac QuickLook previews
+.AppleDouble/
+.LSOverride
+
+# Compiled EJS
+*.ejs~
+
+# Environment files
+frontend/.env
+backend/.env
+compiler/ .env
+
+
+# OS-specific
+.DS_Store
+Thumbs.db
